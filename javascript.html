@@ -5,10 +5,16 @@
 	</head>
 	<body>
 		<p id="text">Hello World!</p>
+		
 		<button id="myButton">Change text</button>
+		<p id="text2">Javascript is ...</p>
+		<button id="myButton2">Append text 2</button>
 		<script type="text/javascript">
 			document.getElementById("myButton").onclick = function(){
 				document.getElementById("text").innerHTML = "Text changed!"
+			}
+			document.getElementById("myButton2").onclick = function(){
+				document.getElementById("text2").innerHTML = document.getElementById("text2").innerHTML + "awesome!"
 			}
 		</script>
 	</body>
