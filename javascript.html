@@ -9,8 +9,11 @@
 		<p id="paragraph">This is test text</p>
 		<script type="text/javascript">
 			document.getElementById("changeText").onclick = function(){
-				document.getElementById("paragraph").innerHTML = document.getElementById("inputText").value;
+				var enterText = "";
+				enterText = document.getElementById("inputText").value;
+				document.getElementById("paragraph").innerHTML = enterText;
 			}
 		</script>
 	</body>
+</html>
 </html>
