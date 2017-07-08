@@ -9,12 +9,17 @@
 		<button id="myButton">Change text</button>
 		<p id="text2">Javascript is ...</p>
 		<button id="myButton2">Append text 2</button>
+		<p id="emptyParagraph"></p>
+		<button id="createParagraph">Create Text</button>
 		<script type="text/javascript">
 			document.getElementById("myButton").onclick = function(){
 				document.getElementById("text").innerHTML = "Text changed!"
 			}
 			document.getElementById("myButton2").onclick = function(){
 				document.getElementById("text2").innerHTML = "I think " +document.getElementById("text2").innerHTML + "awesome!"
+			}
+			document.getElementById("createParagraph").onclick=function(){
+				document.getElementById("emptyParagraph").innerHTML="Hello!"
 			}
 		</script>
 	</body>
