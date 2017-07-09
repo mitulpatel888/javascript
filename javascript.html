@@ -4,15 +4,12 @@
 		
 	</head>
 	<body>
-		<input type="text" id="inputText">
-		<button id ="changeText">Change the text!</button>
-		<p id="paragraph">This is test text</p>
+
 		<script type="text/javascript">
-			document.getElementById("changeText").onclick = function(){
-				var enterText = "";
-				enterText = document.getElementById("inputText").value;
-				document.getElementById("paragraph").innerHTML = enterText;
-			}
+			var myArray =  new Array();
+			myArray[0] = "Pizza";
+			myArray[1] = "Chocolate";
+			alert(myArray[0]);
 		</script>
 	</body>
 </html>
