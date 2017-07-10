@@ -4,15 +4,19 @@
 		
 	</head>
 	<body>
-
+		<p>What is the mahic word?</p>
+		<p><input type="text" id="magicWord"></p>
+		<p><button id="checkMagicWord">Enter</button></p>
 		<script type="text/javascript">
-			var x=2;
-			if (x == 1){
-				alert("x is 1!!");
-			} 
-			else
-			{
-				alert("x is not 1")
+			document.getElementById("checkMagicWord").onclick = function(){
+				var magicWordEntered = document.getElementById("magicWord").value;
+				var magicWord = "ABCD"; 
+				if (magicWordEntered == magicWord){
+					alert("You got it!!!!");
+				}
+				else{
+					alert("Try again!!");
+				}
 			}
 		</script>
 	</body>
