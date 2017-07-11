@@ -4,21 +4,11 @@
 		
 	</head>
 	<body>
-		<p>How many fingers am I holding up?</p>
-		<p><input type="text" id="Guess"></p>
-		<p><button id="checkGuess">Guess</button></p>
+		
 		<script type="text/javascript">
-			document.getElementById('checkGuess').onclick = function(){
-				var randomNumber = Math.floor(Math.random() * 5);
-				var guess = document.getElementById("checkGuess").value;
-				if (randomNumber == guess){
-					alert("Correct Guess!! " +randomNumber );
-				}
-				else{
-					alert("Try Again! The number was " + randomNumber );
-				}
+			for (var i=1;i<5;i++){
+				alert(i);
 			}
-			
 		</script>
 	</body>
 </html>
