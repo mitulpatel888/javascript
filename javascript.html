@@ -8,8 +8,10 @@
 		<script type="text/javascript">
 			var tweetString = "";
 			var tweets = ["Hi Everyone","Night night","Testing"];
-			for (var i=0;i<tweets.length;i++){
-			tweetString = tweetString + "<p>"+ tweets[i]+"</p>";	
+			var i=0;
+			while(i<tweets.length){
+				tweetString = tweetString+"<p>"+ tweets[i] + "</p>";
+				i++;
 			}
 			document.getElementById('tweetDiv').innerHTML = tweetString;
 		</script>
