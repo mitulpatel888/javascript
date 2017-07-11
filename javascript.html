@@ -12,10 +12,10 @@
 				var randomNumber = Math.floor(Math.random() * 5);
 				var guess = document.getElementById("checkGuess").value;
 				if (randomNumber == guess){
-					alert("Correct Guess!!")
+					alert("Correct Guess!! " +randomNumber );
 				}
 				else{
-					alert("Try Again!")
+					alert("Try Again! The number was " + randomNumber );
 				}
 			}
 			
