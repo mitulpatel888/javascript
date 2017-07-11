@@ -4,20 +4,21 @@
 		
 	</head>
 	<body>
-		<p>What is the mahic word?</p>
-		<p><input type="text" id="magicWord"></p>
-		<p><button id="checkMagicWord">Enter</button></p>
+		<p>How many fingers am I holding up?</p>
+		<p><input type="text" id="Guess"></p>
+		<p><button id="checkGuess">Guess</button></p>
 		<script type="text/javascript">
-			document.getElementById("checkMagicWord").onclick = function(){
-				var magicWordEntered = document.getElementById("magicWord").value;
-				var magicWord = "ABCD"; 
-				if (magicWordEntered == magicWord){
-					alert("You got it!!!!");
+			document.getElementById('checkGuess').onclick = function(){
+				var randomNumber = Math.floor(Math.random() * 5);
+				var guess = document.getElementById("checkGuess").value;
+				if (randomNumber == guess){
+					alert("Correct Guess!!")
 				}
 				else{
-					alert("Try again!!");
+					alert("Try Again!")
 				}
 			}
+			
 		</script>
 	</body>
 </html>
