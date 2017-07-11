@@ -4,16 +4,26 @@
 		
 	</head>
 	<body>
-		<div id="tweetDiv"></div>
+		<p>How many fingures are you holding up?</p>
+		<input type="text" id="myNumber">
+		<button id ="guess">Guess!</button>
 		<script type="text/javascript">
-			var tweetString = "";
-			var tweets = ["Hi Everyone","Night night","Testing"];
-			var i=0;
-			while(i<tweets.length){
-				tweetString = tweetString+"<p>"+ tweets[i] + "</p>";
-				i++;
-			}
-			document.getElementById('tweetDiv').innerHTML = tweetString;
+			document.getElementById('guess').onclick = function(){
+				var gotIt = false;
+				var myNumber = document.getElementById("myNumber").value;
+				var numberGuess = 1;
+				while(gotIt == false){
+					var guess=Math.floor(Math.random()* 5);
+					if(guess == myNumber){
+						gotIt = true;
+						alert('Got It!! It was '+numberGuess);
+					}
+					else{
+						numberGuess++;
+					}
+					
+				}
+				}
 		</script>
 	</body>
 </html>
